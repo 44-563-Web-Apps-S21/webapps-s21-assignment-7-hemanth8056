@@ -26,6 +26,12 @@
         var buttonTime = Date.now();
         count = 0;
 
+        function getRandomIntInclusive(min, max) {
+            min = Math.ceil(min);
+            max = Math.floor(max);
+            return Math.floor(Math.random() * (Max - min + 1) + min);
+        }
+
         function startTime() {
 
             for (let i = 0; i < 4; i++) {
